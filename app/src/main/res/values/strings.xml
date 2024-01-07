@@ -3,5 +3,9 @@
     <string name="title_profile">Profile</string>
     <string name="title_home">Home</string>
     <string name="title_about_app">About app</string>
+    <string name="tomas_marny">Tomáš Marný</string>
+    <string name="phone_num">+420 159 357 852</string>
+    <string name="ceo">CEO</string>
+    <string name="megacomp">MegaComp</string>
 
 </resources>
