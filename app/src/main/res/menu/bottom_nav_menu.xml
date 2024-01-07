@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/icon_profil"
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/icon_profile"
         android:title="@string/title_profile" />
 
     <item
@@ -11,8 +11,8 @@
         android:icon="@drawable/icon_home"
         android:title="@string/title_home"/>
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_about_app"
         android:icon="@drawable/icon_about"
-        android:title="@string/title_aboout_app" />
+        android:title="@string/title_about_app" />
 
 </menu>
