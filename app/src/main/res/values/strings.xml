@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MegaCompApp</string>
-    <string name="title_profile">Profil</string>
+    <string name="title_profile">Profile</string>
     <string name="title_home">Home</string>
-    <string name="title_about_app">Aboout app</string>
+    <string name="title_about_app">About app</string>
 
 </resources>
