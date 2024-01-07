@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.utb.megacompapp.ui.dashboard.DashboardFragment"
-        android:label="@string/title_profil"
-        tools:layout="@layout/fragment_dashboard" />
+        android:name="com.utb.megacompapp.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.utb.megacompapp.ui.notifications.NotificationsFragment"
+        android:name="com.utb.megacompapp.ui.about_app.AboutAppFragment"
         android:label="@string/title_aboout_app"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_about_app" />
 </navigation>
