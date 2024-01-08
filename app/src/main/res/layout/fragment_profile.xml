@@ -4,94 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_it"
     tools:context=".ui.profile.ProfileFragment">
 
-    <ImageView
-        android:id="@+id/imageViewQR"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:src="@drawable/image_qr"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNum"
-        app:layout_constraintVertical_bias="0.179" />
-
-    <TextView
-        android:id="@+id/textViewMegaComp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="169dp"
-        android:text="@string/megacomp"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCEO" />
-
-    <TextView
-        android:id="@+id/textViewCEO"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="193dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="192dp"
-        android:text="@string/ceo"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextViewProfileName" />
-
-    <ImageView
-        android:id="@+id/imageViewProfile"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047"
-        app:srcCompat="@drawable/image_profile" />
 
     <TextView
         android:id="@+id/TextViewProfileName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
+        android:layout_width="359dp"
+        android:layout_height="80dp"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textSize="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCEO"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/tomas_marny"
-        android:textColor="@color/white"/>
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:src="@android:drawable/stat_sys_phone_call"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/tomas_marny" />
 
     <TextView
         android:id="@+id/textViewPhoneNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="19dp"
         android:text="@string/phone_num"
         android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewQR"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMegaComp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewMegaComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/megacomp"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPhoneNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@android:drawable/stat_sys_phone_call"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPhoneNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewPhoneNum"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewProfileName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/image_profile" />
+
+    <TextView
+        android:id="@+id/textViewCEO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ceo"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMegaComp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageViewQR"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/image_qr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
 </androidx.constraintlayout.widget.ConstraintLayout>
