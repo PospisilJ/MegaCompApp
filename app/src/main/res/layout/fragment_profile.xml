@@ -4,14 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_it"
+    android:background="@drawable/background_it_dark"
     tools:context=".ui.profile.ProfileFragment">
 
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewProfileName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/image_profile" />
 
     <TextView
         android:id="@+id/TextViewProfileName"
         android:layout_width="359dp"
         android:layout_height="80dp"
+        android:text="@string/tomas_marny"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="54dp"
@@ -19,21 +33,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="@string/tomas_marny" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textViewPhoneNum"
+        android:id="@+id/textViewCEO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
-        android:text="@string/phone_num"
+        android:text="@string/ceo"
         android:textColor="@color/white"
-        android:textSize="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageViewQR"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMegaComp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -51,7 +62,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageViewPhoneIcon"
         android:layout_width="26dp"
         android:layout_height="26dp"
         android:src="@android:drawable/stat_sys_phone_call"
@@ -62,29 +73,18 @@
         app:layout_constraintTop_toTopOf="@+id/textViewPhoneNum"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/imageViewProfile"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/TextViewProfileName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/image_profile" />
-
     <TextView
-        android:id="@+id/textViewCEO"
+        android:id="@+id/textViewPhoneNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ceo"
+        android:layout_marginBottom="19dp"
+        android:text="@string/phone_num"
         android:textColor="@color/white"
-        android:textSize="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewMegaComp"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewQR"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPhoneIcon"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 

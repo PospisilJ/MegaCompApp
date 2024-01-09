@@ -10,6 +10,13 @@
     <string name="homeText1">IT od roku 1642</string>
     <string name="homeText2">Mezinárodní spolupráce</string>
     <string name="about_this_app">About this app</string>
-    <string name="AboutAppText">vytvořil, Josef Pospíšil, jako prácí do předmětu, AP7MT </string>
+    <string name="AboutAppText">
+        vytvořil \n
+        Josef Pospíšil\n
+        jako prácí do předmětu\n
+        AP7MT\n
+        vedoucí cvičení\n
+        Ing. Štěpán Dlabaja
+    </string>
 
 </resources>
