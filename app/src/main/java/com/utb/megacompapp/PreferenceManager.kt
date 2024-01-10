@@ -23,5 +23,6 @@ class PreferenceManager private constructor(context: Context) {
             }
             return instance!!
         }
+
     }
 }
