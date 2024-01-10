@@ -36,7 +36,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageButtonHerat"
+        android:id="@+id/imageButtonHeart"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@android:color/transparent"
@@ -56,8 +56,9 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButtonHerat"
-        app:layout_constraintEnd_toEndOf="@+id/imageButtonHerat"
-        app:layout_constraintStart_toStartOf="@+id/imageButtonHerat"
-        app:layout_constraintTop_toTopOf="@+id/imageButtonHerat" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonHeart"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonHeart"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonHeart"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonHeart"
+        app:layout_constraintVertical_bias="0.6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
