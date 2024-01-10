@@ -6,8 +6,11 @@ import androidx.lifecycle.ViewModel
 
 class AboutAppViewModel : ViewModel() {
 
+    var heartCount: Int = 0
+
     private val _text = MutableLiveData<String>().apply {
-        value = ""
+//        value = ""
+        heartCount
     }
     val text: LiveData<String> = _text
 }
