@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_it_dark"
+    tools:context=".ui.about_app.AboutAppFragment">
+
+    <TextView
+        android:id="@+id/textViewAboutApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/about_this_app"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAboutAppText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/textViewAboutAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AboutAppText"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHeart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/icon_heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toEndOf="@+id/textViewAboutAppText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/textViewHeartCounter"
+        android:layout_width="74dp"
+        android:layout_height="56dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonHeart"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonHeart"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonHeart"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonHeart"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <ImageButton
+        android:id="@+id/imageButtonZeroCounter"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_close"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonHeart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonHeart"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonHeart"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
