@@ -21,6 +21,7 @@ class AboutAppFragment : Fragment() {
 
     private lateinit var heartButton: ImageButton
     private lateinit var heartCount: TextView
+    private lateinit var zeroCounterButton: ImageButton
 
     private lateinit var sharedPreferences: SharedPreferences
 
@@ -44,6 +45,7 @@ class AboutAppFragment : Fragment() {
 
         heartButton = root.findViewById(R.id.imageButtonHeart)
         heartCount = root.findViewById(R.id.textViewHeartCounter)
+        zeroCounterButton = root.findViewById(R.id.imageButtonZeroCounter)
 
 
         sharedPreferences = requireActivity().getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
@@ -51,6 +53,10 @@ class AboutAppFragment : Fragment() {
 
         heartButton.setOnClickListener {
             incrementHeartCount()
+        }
+
+        zeroCounterButton.setOnClickListener{
+            zeroHeartCount()
         }
 
         return root
@@ -70,6 +76,15 @@ class AboutAppFragment : Fragment() {
         // Uložení hodnoty do SharedPreferences
         with(sharedPreferences.edit()) {
             putInt(KEY_HEART_COUNT, newCount)
+            apply()
+        }
+    }
+
+    private fun zeroHeartCount(){
+        heartCount.text = "0"
+
+        with(sharedPreferences.edit()){
+            putInt(KEY_HEART_COUNT, 0)
             apply()
         }
     }
